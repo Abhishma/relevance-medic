@@ -1,0 +1,21 @@
+{
+  "incident_id": "INC-001",
+  "status": "diagnosed",
+  "confidence_band": "medium",
+  "failure_class": "ranking_override_conflict",
+  "evidence_used": [
+    "Results appear contaminated by kids-category items for an adult-intent query",
+    "Recent merchandising or ranking rule change mentioned",
+    "CTR declined by 18.0%"
+  ],
+  "missing_evidence": [],
+  "recommended_actions": [
+    "Review recent ranking or merchandising overrides",
+    "Reduce broad overrides affecting intent-sensitive terms",
+    "Validate top-result shifts with a focused regression set"
+  ],
+  "regression_tests": [
+    "Verify 'black kurta' top results align with intended product type after fix",
+    "Verify merchandising overrides do not outrank core-intent products for protected queries"
+  ]
+}

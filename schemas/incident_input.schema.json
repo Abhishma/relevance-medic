@@ -1,0 +1,63 @@
+{
+  "type": "object",
+  "required": [
+    "incident_id",
+    "narrative",
+    "queries",
+    "metrics_snapshot"
+  ],
+  "properties": {
+    "incident_id": {
+      "type": "string"
+    },
+    "narrative": {
+      "type": "string"
+    },
+    "queries": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "query_text"
+        ],
+        "properties": {
+          "query_text": {
+            "type": "string"
+          },
+          "before_results": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "after_results": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "metrics_snapshot": {
+      "type": "object",
+      "properties": {
+        "ctr_delta_pct": {
+          "type": "number"
+        },
+        "conversion_delta_pct": {
+          "type": "number"
+        },
+        "zero_result_rate_delta_pct": {
+          "type": "number"
+        }
+      }
+    },
+    "release_context": {
+      "type": "string"
+    },
+    "facet_context": {
+      "type": "string"
+    }
+  }
+}

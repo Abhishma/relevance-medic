@@ -1,0 +1,21 @@
+{
+  "incident_id": "INC-003",
+  "narrative": "Search for 'blue sofa' seems wrong after latest release.",
+  "queries": [
+    {
+      "query_text": "blue sofa",
+      "before_results": [],
+      "after_results": [
+        "product 1",
+        "product 2"
+      ]
+    }
+  ],
+  "metrics_snapshot": {
+    "ctr_delta_pct": -5.0,
+    "conversion_delta_pct": 0.0,
+    "zero_result_rate_delta_pct": 0.0
+  },
+  "release_context": "",
+  "facet_context": ""
+}

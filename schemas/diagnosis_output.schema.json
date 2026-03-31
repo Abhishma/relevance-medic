@@ -1,0 +1,60 @@
+{
+  "type": "object",
+  "required": [
+    "incident_id",
+    "status",
+    "confidence_band",
+    "failure_class",
+    "evidence_used",
+    "missing_evidence",
+    "recommended_actions",
+    "regression_tests"
+  ],
+  "properties": {
+    "incident_id": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "diagnosed",
+        "abstained"
+      ]
+    },
+    "confidence_band": {
+      "type": "string",
+      "enum": [
+        "low",
+        "medium",
+        "high"
+      ]
+    },
+    "failure_class": {
+      "type": "string"
+    },
+    "evidence_used": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "missing_evidence": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "recommended_actions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "regression_tests": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

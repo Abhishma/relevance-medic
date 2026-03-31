@@ -1,0 +1,26 @@
+{
+  "incident_id": "INC-001",
+  "narrative": "Users searching 'black kurta' are seeing kids items after the latest merchandising rules deploy.",
+  "queries": [
+    {
+      "query_text": "black kurta",
+      "before_results": [
+        "adult kurta A",
+        "adult kurta B",
+        "adult kurta C"
+      ],
+      "after_results": [
+        "kids kurta X",
+        "adult kurta A",
+        "kids festive kurta Y"
+      ]
+    }
+  ],
+  "metrics_snapshot": {
+    "ctr_delta_pct": -18.0,
+    "conversion_delta_pct": -9.0,
+    "zero_result_rate_delta_pct": 0.0
+  },
+  "release_context": "merchandising boost rules changed 2 hours ago",
+  "facet_context": "gender filter unchanged"
+}

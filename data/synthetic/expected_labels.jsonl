@@ -1,0 +1,8 @@
+{"incident_id": "INC-001", "expected_failure_class": "ranking_override_conflict", "should_abstain": false}
+{"incident_id": "INC-002", "expected_failure_class": "attribute_mismatch", "should_abstain": false}
+{"incident_id": "INC-003", "expected_failure_class": "mixed_or_unclear", "should_abstain": true}
+{"incident_id": "INC-004", "expected_failure_class": "zero_result_spike", "should_abstain": false}
+{"incident_id": "INC-005", "expected_failure_class": "synonym_gap", "should_abstain": false}
+{"incident_id": "INC-006", "expected_failure_class": "inventory_bleed", "should_abstain": false}
+{"incident_id": "INC-007", "expected_failure_class": "mixed_or_unclear", "should_abstain": false}
+{"incident_id": "INC-008", "expected_failure_class": "mixed_or_unclear", "should_abstain": true}

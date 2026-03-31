@@ -1,0 +1,24 @@
+{
+  "incident_id": "INC-006",
+  "narrative": "Search for 'round rug' shows out-of-stock products at the top after inventory feed lag.",
+  "queries": [
+    {
+      "query_text": "round rug",
+      "before_results": [
+        "round rug in-stock A",
+        "round rug in-stock B"
+      ],
+      "after_results": [
+        "round rug out-of-stock Z",
+        "round rug in-stock A"
+      ]
+    }
+  ],
+  "metrics_snapshot": {
+    "ctr_delta_pct": -7.0,
+    "conversion_delta_pct": -5.0,
+    "zero_result_rate_delta_pct": 0.0
+  },
+  "release_context": "inventory feed delayed by 3 hours",
+  "facet_context": "availability badges stale"
+}
